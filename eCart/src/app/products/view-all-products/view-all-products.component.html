@@ -1,0 +1,65 @@
+  <div class="container">
+    <div class="container d-flex">
+            <div class="p-4 col-3">
+                <a  (click)="filter('')">
+
+                <img class=" border border-3 rounded-pill" width="200" height="200" src="https://i.postimg.cc/cHmy2d7K/view-all-products.jpg" alt="">
+                <h6 class="pt-2 ms-2">All products</h6>
+            </a>
+
+            </div>
+            <div class="p-4 col-3">
+                <a (click)="filter(1)" style="text-decoration: none;">
+
+                <img class="border border-3 rounded-pill" width="200" height="200" src="https://i.postimg.cc/tJwrmccZ/all-accessories.jpg" alt="">
+                <h6>All accessories</h6>
+            </a>
+
+            </div>
+            <div class="p-4 col-3">
+                <a (click)="filter(2)" style="text-decoration: none;">
+
+                <img class="border border-3 rounded-pill" width="200" height="200" src="https://i.postimg.cc/fTbtHL79/baby-dress-collection.webp" alt="">
+                <h6>Baby dresses</h6>
+            </a>
+
+            </div>
+            <div class="p-4 col-3">
+                <a (click)="filter(4)" style="text-decoration: none;">
+
+                <img class="border border-3 rounded-pill" width="200" height="200" src="https://i.postimg.cc/qBK4pdk5/all-wipes-collections.webp" alt="">
+                <h6>Baby wipes</h6>
+                
+                    </a>
+            </div>
+    </div>
+  </div>
+  <!-- Section-->
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterProduct | filter:searchKey:'product_name' " class="col mb-5">
+                <!-- filter is a filter name -->
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="{{i.product_image}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.product_name}}</h5>
+                            <!-- Product price-->
+                            ₹&nbsp;{{i.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products/view-Product/{{i.id}}">View options</a></div>
+                    </div>
+                </div>
+            </div>
+           
+         
+        </div>
+    </div>
+</section>

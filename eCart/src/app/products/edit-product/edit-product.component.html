@@ -1,0 +1,20 @@
+<div class="p-5 container w-75 text-center" >
+    <div class="bg-light">
+        <h1>Add new product</h1>
+        <form action="" (ngSubmit)="updateProduct(updateProductForm)" #updateProductForm="ngForm">
+            <input type="text" [(ngModel)] ="product_data.id"      class="form-control mt-3 p-2" placeholder="Id" id="id" name="id">
+            <input type="text" [(ngModel)] ="product_data.product_name" class="form-control mt-3 p-2" placeholder="product name " id="product_name" name="pname">
+            <input type="text" [(ngModel)] ="product_data.category_id" class="form-control mt-3 p-2" placeholder="category id" id="category_id" name="cid">
+            <input type="text" [(ngModel)] ="product_data.description" class="form-control mt-3 p-2" placeholder="Description" id="description" name="desc">
+            <input type="text" [(ngModel)] ="product_data.price"  class="form-control mt-3 p-2" placeholder="Price" id="price" name="price">
+            <input type="text" [(ngModel)] ="product_data.isavailable" class="form-control mt-3 p-2" placeholder="is available" id="" name="isAval">
+            <input type="text" [(ngModel)] ="product_data.product_image" class="form-control mt-3 p-2" placeholder="product image" id="" name="pimg">
+            <input type="text" [(ngModel)] ="product_data.rating"   class="form-control mt-3 p-2" placeholder="Rating" id="Rating" name="rating">
+            <input type="text" [(ngModel)] ="product_data.review"   class="form-control mt-3 p-2" placeholder="Review" id="Review" name="Review">
+            <input type="text" [(ngModel)] ="product_data.vendername"   class="form-control mt-3 p-2" placeholder="vender name" id="" name="vname">
+            <input type="text" [(ngModel)] ="product_data.warrenty"class="form-control mt-3 p-2" placeholder="warrenty" id="" name="warrenty">
+            <button type="submit" class="btn btn-warning">Edit</button>
+        </form>
+    </div>
+  
+</div>

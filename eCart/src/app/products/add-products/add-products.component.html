@@ -1,0 +1,20 @@
+<div class="p-5 container w-75 text-center" >
+    <div class="bg-light">
+        <h1>Add new product</h1>
+        <form action="" [formGroup]="addProductForm">
+            <input type="text" formControlName="id"           class="form-control mt-3 p-2" placeholder="Id" id="pid" name="id">
+            <input type="text" formControlName="product_name" class="form-control mt-3 p-2" placeholder="product name " id="" name="">
+            <input type="text" formControlName="category_id" class="form-control mt-3 p-2" placeholder="category id" id="" name="">
+            <input type="text" formControlName="description" class="form-control mt-3 p-2" placeholder="Description" id="" name="">
+            <input type="text" formControlName="price" class="form-control mt-3 p-2" placeholder="Price" id="price" name="">
+            <input type="text" formControlName="is_available" class="form-control mt-3 p-2" placeholder="is available" id="" name="">
+            <input type="text" formControlName="product_image" class="form-control mt-3 p-2" placeholder="product image" id="" name="">
+            <input type="text" formControlName="rating" class="form-control mt-3 p-2" placeholder="Rating" id="Rating" name="">
+            <input type="text" formControlName="review" class="form-control mt-3 p-2" placeholder="Review" id="Review" name="">
+            <input type="text" formControlName="vender_name" class="form-control mt-3 p-2" placeholder="vender name" id="" name="">
+            <input type="text" formControlName="warrenty" class="form-control mt-3 p-2" placeholder="warrenty" id="" name="">
+            <button class="btn btn-warning" (click)="add()">Add</button>
+        </form>
+    </div>
+  
+</div>

@@ -1,0 +1,29 @@
+Lazy-Loading
+------------
+* provide less loading for high traffic pages.
+* /* * syntax :- ng g module module-name --route module-name --module app.module */
+
+JSON SERVER
+============
+1. Install server
+    npm i  --save json-server 
+2.  Run server in file location
+    syntax :- npx json-server --watch db.json --port 3000      
+                                                                                                                                                                                                                                                                                                                   
+pipe creation
+-------------
+syntax :- ng g pipe pipename
+
+Behaviour subjects
+------------------
+to share data between modules.
+rxjs(reactive extension for js) library of behaviour subject.
+rxjs is used to handle async implementaion in angular.
+it's aynchrous data.
+
+activated route in angular
+--------------------------
+* used to access data from url(access params)
+* activatedRouter - class
+* params() - method
+* it's a asynchronous method.
